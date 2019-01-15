@@ -1,1 +1,61 @@
 /* pages/catalog/catalog.wxss */
+.catalog{
+  width: 100%;
+  background: #fff;
+  border-top: 1px #fafafa solid;
+  display: flex;
+  flex-direction: row;
+}
+.catalog .nav{
+  width: 162rpx;
+  height: 100%;
+}
+
+.catalog .nav .item{
+  text-align: center;
+  width: 162rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 10rpx;
+  background: #ff00ff;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.catalog .nav .item .active{
+  color: #ab2b2b;
+  font-size: 36rpx;
+  border-left: 6rpx solid #ab2b2b;
+}
+
+.catalog .cate{
+  height: 100%;
+  padding: 0 30rpx;
+}
+
+.banner{
+  position: relative;
+  height: 222rpx;
+  width: 100%;
+}
+
+.banner image {
+  position: absolute;
+  top: 30rpx;
+  left: 0;
+  border-radius: 4rpx;
+  height: 192rpx;
+  width: 100%;
+}
+
+.banner .txt {
+  position: absolute;
+  top: 30rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+  left: 0;
+  height: 192rpx;
+  line-height: 192rpx;
+  width: 100%;
+}

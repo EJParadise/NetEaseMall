@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    categoryList:[],
+    currentCategory:{}
   },
 
   /**
@@ -16,10 +17,15 @@ Page({
   },
 
   getCatalog:function(){
+    let that = this;
     wx.request({
       url: 'https://www.findfine.com.cn/api/catalog/index',
       success(res){
-        console.log(res);
+        that.setData({
+          categoryList: res.data.data.categoryList,
+          currentCategory:res.data.data.currentCategory
+        });
+        
       }
     })
   }
