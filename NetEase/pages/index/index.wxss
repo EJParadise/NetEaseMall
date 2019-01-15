@@ -1,0 +1,128 @@
+.banner{
+  width: 750rpx;
+  height: 417rpx;
+}
+
+.banner image{
+  width: 100%;
+  height: 417rpx;
+}
+
+.m-menu{
+  width: 750rpx;
+  height: 181rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 4px #f4f4f4 solid;
+}
+
+.m-menu .item{
+  flex: 1;
+}
+
+.m-menu image{
+  width: 58rpx;
+  height: 58rpx;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12rpx;
+}
+
+.m-menu text{
+  font-size: 24rpx;
+  color: #333;
+  display: block;
+  text-align: center;
+}
+
+.a-section{
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.a-section .hd{
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-section .hd text{
+  font-size: 33rpx;
+}
+
+.a-brand .bd{
+  width: 750rpx;
+  height: auto;
+}
+
+.a-brand .bd .wrap{
+  position: relative;
+  float: left;
+  margin-left: 5rpx;
+  margin-bottom: 5rpx;
+  height: 252rpx;
+  width: 370rpx;
+}
+
+.a-brand .bd .wrap image{
+  height: 252rpx;
+  width: 370rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.a-brand .bd .wrap .mt{
+  position: absolute;
+  top: 10rpx;
+  left: 20rpx;
+}
+
+.a-brand .bd .mt .brand{
+  display: block;
+  font-size: 33rpx;
+  color: #333;
+}
+
+.a-brand .bd .mt .price{
+  display: block;
+  font-size: 25rpx;
+  color: #999;
+} 
+
+.a-new .bd{
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  padding: 0 31rpx 45rpx 31rpx;
+}
+
+.a-new .bd .goods-item{
+  width: 302rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 21rpx;
+  margin-right: 21rpx;
+}
+.a-new .bd image{
+  width: 302rpx;
+  height: 302rpx;
+}
+
+.a-new .bd .goods-item .title{
+  font-size: 30rpx;
+  color: #333;
+  display: block;
+  text-align: center;
+}
+
+.a-new .bd .goods-item .price{
+  font-size: 30rpx;
+  color: #b4282d;
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+<view class='container'>
+  <view class='search'></view>
+  <view class='catalog'>
+    <scroll-view class='nav'></scroll-view>
+    <scroll-view class='cate'></scroll-view>
+  </view>
+</view>

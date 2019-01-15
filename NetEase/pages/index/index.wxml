@@ -1,0 +1,59 @@
+<view class='container'>
+  <!-- 轮播图 -->
+  <swiper class='banner' indicator-dots='true' autoplay='true' interval='3000' duration='1000'>
+    <swiper-item wx:for="{{banner}}">
+      <image src='{{item.image_url}}' background-size="cover"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 分类 -->
+  <view class='m-menu'>
+    <navigator class='item' wx:for="{{channel}}">
+      <image src='../../images/icon_collect.png'></image>
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+
+  <!-- 品牌制造商直供 -->
+  <view class='a-section a-brand'>
+    <view class='hd'>
+      <navigator>
+        <text>品牌制造商直供</text>
+      </navigator>
+    </view>
+    <view class='bd'>
+      <navigator wx:for="{{brandList}}">
+        <view  class='wrap'>
+          <image src='{{item.new_pic_url}}'></image>
+          <view class='mt'>
+            <text class='brand'>{{item.name}}</text>
+            <text class='price'>{{item.floor_price}}元起</text>
+          </view>
+        </view>        
+      </navigator>
+    </view>
+  </view>
+  <!-- 新品首发 -->
+  <view class='a-section a-new'>
+    <view class='hd'>
+      <navigator>
+        <text>周一周四·新品首发</text>
+      </navigator>
+    </view>
+    <view class='bd'>
+      <navigator wx:for="{{newGoodsList}}">
+        <view class='goods-item'>
+          <image src='{{item.list_pic_url}}'></image>
+          <text class='title'>{{item.name}}</text>
+          <text class='price'>¥{{item.retail_price}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 人气推荐 -->
+
+  <!-- 专题精选 -->
+
+  <!-- 分类列表 -->
+
+</view>
